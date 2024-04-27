@@ -1,0 +1,160 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Lets have fun</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" type='text/css'>
+    <link rel="stylesheet" type="text/css" href="{% static 'style.css'%}">
+</head>
+
+<body>
+    <div class="tabs-container">
+        <div class="tabs-layout">
+            <select class="tabs-select">
+                <option value="tab1">Maybe useless, but it's a fact</option>
+                <option value="tab2">News</option>
+                <option value="tab3">Quote of the day</option>
+                <option value="tab4">For cat lovers</option>
+                <option value="tab6">Let's wrap up with a joke</option>
+            </select>
+            <ul class="tabs">
+                <li>
+                    <a id="tab1" title="It's a fact" href="#tab1">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-bulb" width="24"
+                            height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                            <path d="M3 12h1m8 -9v1m8 8h1m-15.4 -6.4l.7 .7m12.1 -.7l-.7 .7"></path>
+                            <path d="M9 16a5 5 0 1 1 6 0a3.5 3.5 0 0 0 -1 3a2 2 0 0 1 -4 0a3.5 3.5 0 0 0 -1 -3"></path>
+                            <path d="M9.7 17l4.6 0"></path>
+                        </svg>
+                        Maybe useless, but it's a fact
+                    </a>
+                </li>
+                <li>
+                    <a id="tab2" title="News" href="#tab2">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-file-description"
+                            width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
+                            fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                            <path d="M14 3v4a1 1 0 0 0 1 1h4"></path>
+                            <path d="M17 21h-10a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2z"></path>
+                            <path d="M9 17h6"></path>
+                            <path d="M9 13h6"></path>
+                        </svg>
+                        News
+                    </a>
+                </li>
+                <li>
+                    <a id="tab3" title="Quote of the day" href="#tab3">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brush" width="24"
+                            height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                            <path d="M3 21v-4a4 4 0 1 1 4 4h-4"></path>
+                            <path d="M21 3a16 16 0 0 0 -12.8 10.2"></path>
+                            <path d="M21 3a16 16 0 0 1 -10.2 12.8"></path>
+                            <path d="M10.6 9a9 9 0 0 1 4.4 4.4"></path>
+                        </svg>
+                        Quote of the day
+                    </a>
+                </li>
+                <li>
+                    <a id="tab4" title="For cat lovers" href="#tab4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-robot" width="24"
+                            height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                            <path
+                                d="M7 7h10a2 2 0 0 1 2 2v1l1 1v3l-1 1v3a2 2 0 0 1 -2 2h-10a2 2 0 0 1 -2 -2v-3l-1 -1v-3l1 -1v-1a2 2 0 0 1 2 -2z">
+                            </path>
+                            <path d="M10 16h4"></path>
+                            <circle cx="8.5" cy="11.5" r=".5" fill="currentColor"></circle>
+                            <circle cx="15.5" cy="11.5" r=".5" fill="currentColor"></circle>
+                            <path d="M9 7l-1 -4"></path>
+                            <path d="M15 7l1 -4"></path>
+                        </svg>
+                        For cat lovers
+                    </a>
+                </li>
+                <li>
+                    <a id="tab6" title="A joke" href="#tab6">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-rocket" width="24"
+                            height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                            <path
+                                d="M4 13a8 8 0 0 1 7 7a6 6 0 0 0 3 -5a9 9 0 0 0 6 -8a3 3 0 0 0 -3 -3a9 9 0 0 0 -8 6a6 6 0 0 0 -5 3">
+                            </path>
+                            <path d="M7 14a6 6 0 0 0 -3 6a6 6 0 0 0 6 -3"></path>
+                            <path d="M15 9m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"></path>
+                        </svg>
+                        Let's wrap up with a joke
+                    </a>
+                </li>
+            </ul>
+            <div class="tab-content-wrapper">
+                <section id="tab1-content" class="tab-content">
+                    <h2>Your fact for the moment!</h2>
+                    <p>
+                      {{ fact }}
+                    </p>
+                    <br>
+                    <br>
+                    <br>
+                    <p>
+                        Ckeck it out here:<a href="{{ source }}"> {{ source }}                        </a>
+                      </p>
+                </section>
+                <section id="tab2-content" class="tab-content">
+                    <h2>Today's Top News in the world</h2>
+                    <p>
+                      <b>{{ news_title }}  </b>
+                    </p>
+                    <p>
+                        {{ news_description }}
+                    </p>
+                    <img src="{{ news_image }}" alt="product">
+                    <p>
+                      As reported by: <a href="{{ news_url }}">{{ news_source }}</a>
+                    </p>
+                </section>
+                <section id="tab3-content" class="tab-content">
+                    <h2>Let's get a Quote</h2>
+                    <p>
+                      {{ quote}}
+                    </p>
+                    <br>
+                    <br>
+                      <p>
+                        By {{ author }}
+                      </p>
+
+                </section>
+                <section id="tab4-content" class="tab-content">
+                    <h2>Random facts</h2>
+                    <p>
+                       {{ cat_facts }}
+                    </p>
+                    <br>
+                    <img src="{{ url }}" alt="cat">
+
+                </section>
+                <section id="tab6-content" class="tab-content">
+                    <h2>Let's have a laugh </h2>
+                    <p>
+                        {{ joke }}
+                    </p>
+                </section>
+            </div>
+        </div>
+    </div>
+    <script src="{% static 'script.js' %}"></script>
+</body>
+
+</html>
